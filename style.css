@@ -1,0 +1,378 @@
+
+
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+header{
+    background-color: #e7e6e6;
+}
+.default-btn{
+    border: none;
+    background-color:white;
+    padding: 8px 22px;
+    border-radius: 20px;
+    color: #0d6efd;
+    text-transform: capitalize;
+    font-weight: 500;
+    position: relative;
+    transition: .5s;
+    z-index: 1;
+
+}
+.default-btn:hover{
+    color: white;
+}
+.default-btn::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    background-color:#0d6efd;
+    z-index: -1;
+    transition: .5s;
+}
+.default-btn:hover::after{
+    width: 100%;
+}
+.logo img{
+    width: 80px;
+}
+
+.primary-menu ul li{}
+.primary-menu ul li a{
+    margin: 0 10px;
+    padding: 10px;
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 500;
+    color: #767676;
+    position: relative;
+    transition: .5s;
+    text-decoration: none;
+}
+.primary-menu ul li a:hover{
+    color: black;
+}
+.primary-menu ul li:first-child a::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #0d6efd !important;
+    bottom: -14px;
+    left: 5px; 
+}
+.primary-menu ul li:first-child a{
+    color: black;
+}
+.primary-menu ul li a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #0d6efd !important;
+    bottom: -14px;
+    left: 5px;
+    transition: .5s;
+}
+.primary-menu ul li a:hover::after{
+    width: 100%;
+}
+.slider{
+    background-color: #edf6ff;
+    position: relative;
+    overflow: hidden;
+}
+.slider-vh{
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    
+}
+.slider-text h2{
+    font-size: 44px;
+    line-height: 3rem;
+    font-weight: 400;
+
+}
+.slider-text p{
+    font-size: 17px;
+    line-height: 1.6rem;
+    font-weight: 400;
+    color: #767676;
+    margin: 18px 0;
+
+}
+.slider-btn a{
+    padding: 8px 22px;
+    background-color: #0d6efd;
+    border-radius: 20px;
+    color: white;
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 40px;
+    border: 1px solid transparent;
+    transition: .5s;
+
+}
+.slider-btn a:hover{
+    background-color:white;
+    border: 1px solid #0d6efd;
+    color: #0d6efd;
+}
+.service-text span{
+    font-weight: 400;
+    color: #0d6efd;
+    line-height: 40px;
+}
+.service-text h2{
+    font-size: 44px;
+    line-height: 3rem;
+    font-weight: 500;
+
+}
+.service-text p{
+    font-size: 17px;
+    line-height: 1.6rem;
+    font-weight: 400;
+    color: #767676;
+    margin: 18px 0;
+}
+.slider-img{
+    height: 650px;
+    width: 650px;
+    position: absolute;
+    top: -105px;
+    right: -160px;
+}
+.slider-img img{
+    height: 100%;
+    border-radius: 50%;
+ 
+}
+
+
+/* service */
+.blank-div{
+    height: 2px;
+    width: 40px;
+    background-color:#0d6efd;
+    margin: 20px 0;
+}
+.service-card{
+    padding: 15px;
+    border: none;
+    box-shadow: 0 0 15px 0 rgba(0,0,0,.1);
+    background-color: #f9fcff;
+    transition: .5s;
+}
+.service-card:hover{
+    background-color: #0d6efd;
+    color: white !important;
+    transform: scale(1.04);
+}
+.card-text h5{
+    font-weight: 400;
+    font-size: 22px;
+}
+.card-text .card-icon{
+    height: 50px;
+    width: 50px;
+    background-color:#0d6efd;
+    border-radius: 30px 30px 30px 0;
+    line-height: 50px;
+    text-align: center;
+    margin: 30px 0;
+    position: relative;
+    transition: .5s;
+}
+.card-text .card-icon::after{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    bottom: -10px;
+    left: 0;
+    background-color: #0d6efd;
+    transition: .5s;
+}
+.service-card:hover .card-icon::after{
+    width: 50px;
+    background-color: #e7e6e6;
+}
+.card-text .card-icon span{
+    color: white;
+    transition: .5s;
+  
+}
+.service-card:hover .card-icon{
+    background-color: #fff;
+    color: #0d6efd !important;
+}
+.service-card:hover .card-icon span{
+    color: #0d6efd !important;
+}
+.card-text p{
+    font-size: 16px;
+    line-height: 1.6rem;
+    font-weight: 400;
+    color: #767676;
+    margin: 18px 0;
+    transition: .5s;
+}
+.service-card:hover .card-text p{
+    color: white;
+}
+.for-dotted-img{
+    position: relative;
+}
+.dotted-img {
+    position: absolute;
+    bottom: -50px;
+    left: -50px;
+    z-index: -1;
+}
+
+.intro{
+    background: url(https://i.ibb.co/414FcB9/video-bg.jpg) no-repeat center center;
+    background-size: cover ;
+    margin-top:100px;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+
+.footer-text{}
+.footer-text h6{
+    font-size: 16px;
+    font-weight: 400;
+
+}
+.footer-text h2{
+    position: relative;
+    margin-bottom: 80px;
+    font-size: 36px;
+    font-weight: 400;
+}
+.footer-text h2::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 60px;
+    background-color: #fff;
+    bottom: -23px;
+    left: 250px;
+}
+.intro::after{
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color:rgba(1, 9, 20, 0.6);
+    z-index: -1;
+}
+
+/* animation */
+
+.footer-icon{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.footer-icon span{
+    font-size: 80px;
+    color: white;
+    line-height: 80px;
+}
+
+.footer-icon::before{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid white;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    margin: auto;
+    animation: playbtn1 2s ease-in infinite;
+}
+@keyframes playbtn1{
+    0%{
+        transform: scale(1);
+        opacity: 0;
+    }
+    25%{
+        transform: scale(1);
+        opacity: .4;
+    }
+    50%{
+        transform: scale(1.3);
+        opacity: .7;
+    }
+    75%{
+        transform: scale(1.5);
+        opacity: .9;
+    }
+    100%{
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+
+
+.footer-icon::after{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid white;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin: auto;
+    animation: playbtn2 2s infinite;
+}
+@keyframes playbtn2{
+    0%{
+        transform: scale(1);
+        opacity: 0;
+    }
+    25%{
+        transform: scale(1);
+        opacity: .4;
+    }
+    50%{
+        transform: scale(1.3);
+        opacity: .7;
+    }
+    75%{
+        transform: scale(1.5);
+        opacity: .9;
+    }
+    100%{
+        transform: scale(2);
+        opacity: 0;
+    }
+}
